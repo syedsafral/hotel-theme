@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <title>w3 Hotel</title>
+</head>
+
+<body class="bg-slate-200 ">
+    <!-- Navbar -->
+    <section class=" flex flex-col justify-center sm:flex">
+        <nav class="flex  justify-between  flex-col sm:flex-row ">
+            <ul class="flex cursor-pointer  text-xl flex-col sm:flex-row ">
+                <div class="flex items-center justify-center px-4 py-2 bg-red-600 text-white hover:bg-slate-300 hover:text-black ">
+                    <ion-icon class="pr-4 animate-pulse" name="bed-outline"></ion-icon>
+                    <li class="animate-pulse">Logo</li>
+                </div>
+                <li class=" px-4 py-2 hover:bg-slate-300 hover:text-black black text-center"><a href="#Rooms">Rooms</a> </li>
+                <li class=" px-4 py-2 hover:bg-slate-300 hover:text-black black text-center"><a href="#About">About</a></li>
+                <li class=" px-4 py-2 hover:bg-slate-300 hover:text-black text-center"><a href="#Contact">Contact</a></li>
+            </ul>
+            <div class=" flex justify-center items-center  md:justify-end">
+                <a class="bg-slate-200 px-4 py-2 text-xl hover:bg-slate-300 text-center w-full lg:justify-end  hover:animate-none ease-in-out" href="#">Book Now <ion-icon class="animate-bounce" name="arrow-down"></ion-icon></a>
+                
+            </div>
+            
+        </nav>
+    </section>
+
+     <!-- Home section -->
+
+    <section id="" >   
+        <div class="bg-hero-pattern  py-44 px-4 sm:pr-52 ">
+            <div class=" bg-white w-full md:w-96 lg:w-1/2  ">
+                <div class="flex items-center p-4 bg-red-600">
+                    <ion-icon class="pr-4 text-2xl" name="bed-outline"></ion-icon>
+                    <h1 class="text-2xl">Hotel Name</h1>
+                </div>
+                <div class=" flex flex-col sm:grid sm:grid-cols-2  ">
+                    <div class="px-4 my-2">
+                        <ion-icon name="calendar"></ion-icon>
+                        <label class="text-xl" for="">Chek In</label>
+                        <input class="w-full border-2 border-gray-400 h-10 text-lg " type="text" name="" id="" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="px-4 my-2">
+                        <ion-icon name="calendar"></ion-icon>
+                        <label class="text-xl" for="">Chek Out</label>
+                        <input class="w-full border-2 border-gray-400 h-10  text-lg" type="text" name="" id="" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="px-4 my-2">
+                        <ion-icon name="man"></ion-icon>
+                        <label for=""> Adults</label>
+                        <input class="w-full border-2 border-gray-400 h-10  text-lg" type="number" name="Adults" id="">
+                    </div>
+                    <div class="px-4 my-2">
+                        <ion-icon name="accessibility"></ion-icon>
+                        <label for=""> Kids</label>
+                        <input class="w-full border-2 border-gray-400 h-10  text-lg" type="number" name=" Kids" id="">
+                    </div>
+                </div>
+                <div class=" text-xl p-4 bg-slate-500 text-white inline-block mx-4 my-2 hover:bg-slate-300 hover:text-black">
+                    <div class="flex items-center text-base">
+                        
+                        <ion-icon class="px-4" name="search"></ion-icon>
+                        <a href="">Search availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room section -->
+
+    <section id="Rooms" class="bg-slate-200">
+        <div class=" px-4">
+            <h1 class="text-2xl py-4">Rooms</h1>
+            <p class="py-2">Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well</p>
+        </div>
+        <div class="flex flex-col px-4 sm:flex-row sm:space-x-4">
+            <div class=" my-2 ">
+                <ion-icon name="calendar"></ion-icon>
+                <label class="text-lg" for="">Chek In</label>
+                <input class="w-full border-2 border-gray-400 h-10 text-lg" type="text" name="" id="" placeholder="DD/MM/YY">
+            </div>
+            <div class=" my-2">
+                <ion-icon name="calendar"></ion-icon>
+                <label class="text-lg" for="">Chek Out</label>
+                <input class="w-full border-2 border-gray-400 h-10 text-lg" type="text" name="" id="" placeholder="DD/MM/YY">
+            </div>
+            <div class=" my-2">
+                <ion-icon name="man"></ion-icon>
+                <label class="text-lg" for=""> Adults</label>
+                <input class="w-full border-2 border-gray-400 h-10 text-lg" type="number" name="Adults" id="">
+            </div>
+            <div class=" my-2">
+                <ion-icon name="accessibility"></ion-icon>
+                <label class="text-lg" for=""> Kids</label>
+                <input class="w-full border-2 border-gray-400 h-10 text-lg" type="number" name=" Kids" id="">
+            </div>
+            <div class="">
+                <div class=" flex items-center">
+                    <ion-icon class="px-2 py-2" name="search"></ion-icon>
+                    <h1 class="text-lg">Search</h1>
+                </div>
+                <button class=" w-44 h-8 my-2 bg-slate-900 text-white hover:bg-slate-300 hover:text-black">Search</button>
+            </div>
+        </div>
+        <div class="flex justify-between flex-col sm:flex-row sm:space-x-4 px-4 py-2">
+            <div class="h-full">
+               <img class="h-full w-full" src="../02.jpg" alt="">
+               <div class="px-4 bg-white ">
+                   <h1 class="text-2xl py-4" >Single Room</h1>
+                   <h2 class=" text-lg text-slate-400">From $99</h2>
+                   <h2 class="py-4">Single bed</h2>
+                   <h2 class="py-2">15m <sup>2</sup></h2>
+                   <div class="flex items-center h-8 space-x-2">
+                       <i class="fa-solid fa-bath"></i>
+                       <ion-icon class="h-14" name="call"></ion-icon>
+                       <ion-icon name="wifi"></ion-icon>
+                   </div>
+                   <button class="bg-black text-white w-full h-8 my-4 hover:bg-slate-400 hover:text-black">Choose Room</button>
+               </div>
+            </div>
+            <div class="h-full">
+                <img class="h-full w-full"src="../03.jpg" alt="">
+                <div class="px-4 bg-white ">
+                    <h1 class="text-2xl py-4" >Double Room</h1>
+                    <h2 class=" text-lg text-slate-400">From $149</h2>
+                    <h2 class="py-4">Queen-size bed</h2>
+                    <h2 class="py-2">25m <sup>2</sup></h2>
+                    <div class="flex items-center h-8 space-x-2">
+                        <ion-icon class="" name="call"></ion-icon>
+                        <ion-icon name="wifi"></ion-icon>
+                        <ion-icon name="tv"></ion-icon>
+                    </div>
+                    <button class="bg-black text-white w-full h-8 my-4 hover:bg-slate-400 hover:text-black ">Choose Room</button>
+                </div>
+            </div>
+            <div class="h-full">
+                <img class="h-full w-full"src="../04.jpg" alt="">
+                <div class="px-4 bg-white ">
+                    <h1 class="text-2xl py-4" >Deluxe Room</h1>
+                    <h2 class=" text-lg text-slate-400">From $199</h2>
+                    <h2 class="py-4">King-size bed</h2>
+                    <h2 class="py-2">40m <sup>2</sup></h2>
+                    <div class="flex items-center h-8 space-x-2">
+                        <i class="fa-solid fa-bath"></i>
+                        <ion-icon class="h-14" name="call"></ion-icon>
+                        <ion-icon name="wifi"></ion-icon>
+                        <ion-icon name="tv"></ion-icon>
+                        <ion-icon name="wine"></ion-icon>
+                        <ion-icon name="fast-food-sharp"></ion-icon>
+                    </div>
+                    <button class="bg-black text-white w-full h-8 my-4 hover:bg-slate-400 hover:text-black">Choose Room</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- about section -->
+
+    <section id="About" class="">
+        <div class="flex flex-col lg:flex-row  px-4 w-full bg-slate-200">
+            <div class="flex flex-col w-full">
+              <h1 class="text-2xl pt-8 font-serif">About</h1>
+              <p class=" pt-6 text-lg">Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <div class="flex items-center space-x-2 text-lg pt-8">
+                  <span>We accept:</span>
+                  <ion-icon name="card-sharp"></ion-icon>
+                  <ion-icon name="calendar-clear"></ion-icon>
+                  <ion-icon name="card-outline"></ion-icon>
+              </div>
+            </div>
+                <div id="about" class=" flex w-full">
+               <img class="w-full pt-8 " src="../05.jpg" alt="">
+            </div> 
+        </div>
+        <div class="flex flex-col justify-center items-center md:flex-row md:justify-around bg-slate-200 py-16 text-lg">
+            <div class="flex items-center space-x-2">
+                <ion-icon class="text-red-600 text-xl" name="location-sharp"></ion-icon>
+                <h1> <sub class="text-lg">42<sub class="text-lg">3</sub></sub> Some adr, Chicago, US</h1>
+            </div>
+            <div class="flex items-center space-x-2">
+                <ion-icon class="text-red-600 text-xl" name="call"></ion-icon>
+                <h1> Phone: +00 151515</h1>
+            </div>
+            <div class="flex items-center space-x-2">
+                <ion-icon class="text-red-600 text-xl" name="mail"></ion-icon>
+                <h1> Email: mail@mail.com</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4">
+        <div class="bg-red-600 h-28 w-full flex items-center">
+            <div class="flex items-center space-x-4 px-4 font-sans">
+              <ion-icon class="bg-orange-500 text-2xl p-3 text-white " name="information"></ion-icon>
+                <h1 class="text-white">On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallary section -->
+
+    <section class="px-4 h-full">
+         <div class="">
+             <h1 class="font-serif text-3xl py-4">Our Hotels</h1>
+             <p class="text-lg py-6">You can find our hotels anywhere in the world:</p>
+         </div>
+         <div class="flex flex-col sm:flex-row h-full w-full">
+             <img class=" h-full w-full sm:w-1/2 sm:h-full sepia-0" src="../06.jpg" alt="">
+             <div class=" flex flex-col h-full gap-4 my-4 sm:grid sm:grid-cols-2 sm:ml-4 sm:my-0 sm:w-1/2">
+                <img src="../07.jpg" alt="">
+                <img src="../08.jpg" alt="">
+                <img src="../09.jpg" alt="">
+                <img src="../10.jpg" alt="">
+             </div>
+         </div>
+    </section>
+
+    <section>
+        <div class="bg-black  my-12 px-4 text-white opacity-50 hover:opacity-95">
+             <h1 class="text-3xl py-6">Get the best offers first!</h1>
+             <span class="text-lg py-2">Join our newsletter.</span>
+             <div class=" text-white w-full py-4">
+                 <label class="text-lg" for="E-mail">E-mail</label>
+                 <input class="w-full h-10 py-1" type="email" name="E-mail" id="" placeholder="Your Email address">
+             </div>
+             <button class="px-4 py-2 bg-red-600 text-lg my-4 hover:bg-slate-400 hover:text-black font-light">Subscribe</button>
+        </div>
+    </section> 
+
+    <!-- contact section -->
+
+    <section id="Contact">
+        <div class="px-4">
+            <h1 class="text-3xl">Contact</h1>
+            <p class="text-lg py-4">If you have any questions, do not hesitate to ask them.</p>
+            <div class="">
+                <div class="flex items-center space-x-8 space-y-2 ">
+                    <ion-icon class="text-red-600 text-xl" name="location-sharp"></ion-icon>
+                    <h1> Chicago, US</h1>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <ion-icon class="text-red-600 text-xl" name="call"></ion-icon>
+                    <h1> Phone: +00 151515</h1>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <ion-icon class="text-red-600 text-xl" name="mail"></ion-icon>
+                    <h1>  Email: mail@mail.com</h1>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 py-4">
+                <input class="h-12 px-2 border-2 border-slate-300" type="text" name="Name" id="" placeholder="Name">
+                <input class="h-12 px-2 border-2 border-slate-300" type="text" name="Email" id="" placeholder="Email">
+                <input class="h-12 px-2 border-2 border-slate-300" type="text" name="massage" id="" placeholder="massage">
+                <button class="bg-black text-white w-44 py-3 text-lg hover:bg-slate-400 hover:text-black font-light ">SEND MASSAGE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <SECtion>
+        <div class="flex justify-center items-center flex-col bg-black text-white">
+            <h1 class="py-8">Find Us On</h1>
+            <div class="flex justify-center ">
+
+                <ul class="flex space-x-2 py-4 ">
+                    <li class="text-3xl hover:text-slate-400"><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li class="text-3xl hover:text-slate-400"><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li class="text-3xl hover:text-slate-400"><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li class="text-3xl hover:text-slate-400"><ion-icon name="logo-youtube"></ion-icon></li>
+                    <li class="text-3xl hover:text-slate-400"><ion-icon name="logo-linkedin"></ion-icon></li>
+                </ul>
+                
+            </div>
+            <span class="pb-10 text-sm">Powered by <a class="underline hover:text-green-500" href="#">w3.css</a></span>
+        </div>
+    </SECtion>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
